@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BattleActivity"
+    android:background="@drawable/backgound">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvBattleList"
+        android:layout_width="409dp"
+        android:layout_height="185dp"
+        android:layout_marginTop="11dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="284dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Choose two"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnStartFight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Fight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rvBattleList" />
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="409dp"
+        android:layout_height="430dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnStartFight">
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btnMoveFromBattle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Move"
+        app:layout_constraintEnd_toStartOf="@+id/btnStartFight"
+        app:layout_constraintHorizontal_bias="0.968"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rvBattleList" />
+
+    <RadioGroup
+        android:id="@+id/rgMoveFromBattle"
+        android:layout_width="222dp"
+        android:layout_height="54dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/frame"
+        app:layout_constraintEnd_toStartOf="@+id/btnMoveFromBattle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rvBattleList">
+
+        <RadioButton
+            android:id="@+id/rbKeepBattle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Battle" />
+
+        <RadioButton
+            android:id="@+id/rbMoveTrainFromBattle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Train" />
+
+        <RadioButton
+            android:id="@+id/rbMoveBaseFromBattle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Base" />
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>

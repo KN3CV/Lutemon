@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/backgound">
+
+    <Button
+        android:id="@+id/btnFight"
+        android:layout_width="243dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="32dp"
+        android:onClick="switchToBattle"
+        android:text="Go to battle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTrain" />
+
+    <Button
+        android:id="@+id/btnTrain"
+        android:layout_width="243dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="32dp"
+        android:onClick="switchToTrain"
+        android:text="Training Center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBase" />
+
+    <Button
+        android:id="@+id/btnBase"
+        android:layout_width="243dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="32dp"
+        android:onClick="switchToBase"
+        android:text="Go to base"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddLut" />
+
+    <Button
+        android:id="@+id/btnAddLut"
+        android:layout_width="243dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="140dp"
+        android:onClick="switchToAddLutemon"
+        android:text="Add Lutemon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

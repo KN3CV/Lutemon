@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BattleFragment">
+
+    <ImageView
+        android:id="@+id/ivLutA"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center|left"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="155dp"
+        tools:src="@tools:sample/avatars" />
+    <ImageView
+        android:id="@+id/ivLutB"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        tools:src="@tools:sample/avatars"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="155dp"
+        android:layout_gravity="center|right"/>
+
+    <Button
+        android:id="@+id/btnBattleAttack"
+        android:layout_width="124dp"
+        android:layout_height="68dp"
+        android:layout_gravity="bottom|center"
+        android:text="Attack"
+        android:textSize="20sp"
+        android:layout_marginBottom="35dp"/>
+
+    <TextView
+        android:id="@+id/txtvStatsA"
+        android:layout_width="124dp"
+        android:layout_height="114dp"
+        android:layout_gravity="bottom|left"
+        android:layout_marginBottom="55dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/txtvStatsB"
+        android:layout_width="124dp"
+        android:layout_height="115dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="55dp"
+        android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/ivAttack"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_gravity="center|left"
+        android:layout_marginLeft="85dp"
+        android:layout_marginBottom="75dp"
+        android:src="@drawable/lutesword"
+        app:srcCompat="@drawable/lutesword"
+        tools:srcCompat="@drawable/lutesword" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_gravity="center|right"
+        android:layout_marginRight="85dp"
+        android:layout_marginBottom="75dp"
+        android:src="@drawable/luteshield"
+        app:srcCompat="@drawable/luteshield"
+        tools:srcCompat="@drawable/luteshield"/>
+
+    <TextView
+        android:id="@+id/txtvFight"
+        android:layout_width="174dp"
+        android:layout_height="202dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="95dp"
+        />
+</FrameLayout>

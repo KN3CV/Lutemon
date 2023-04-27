@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TrainingActivity"
+    android:background="@drawable/backgound">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTrainList"
+        android:layout_width="408dp"
+        android:layout_height="283dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnTrainLut"
+        android:layout_width="173dp"
+        android:layout_height="74dp"
+        android:onClick="trainLutemon"
+        android:text="Train"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rvTrainList"
+        app:layout_constraintVertical_bias="0.12" />
+
+    <Button
+        android:id="@+id/btnMoveFromTrain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Move"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.851"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTrainLut"
+        app:layout_constraintVertical_bias="0.015" />
+
+    <RadioGroup
+        android:id="@+id/rgMoveFromTrain"
+        android:layout_width="257dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnMoveFromTrain"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTrainLut"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RadioButton
+            android:id="@+id/rbMoveBattleFromTrain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Battle" />
+
+        <RadioButton
+            android:id="@+id/rbKeepTrain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Train" />
+
+        <RadioButton
+            android:id="@+id/rbMoveBaseFromTrain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Base" />
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>
